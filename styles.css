@@ -1,0 +1,132 @@
+/* General body styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1.title {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1140px;
+}
+
+main section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main p, main a {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
